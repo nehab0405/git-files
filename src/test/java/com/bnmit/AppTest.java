@@ -1,19 +1,13 @@
 package com.bnmit;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import org.junit.jupiter.api.Test;
-
-/**
- * Unit test for simple App.
- */
 public class AppTest {
-
-    /**
-     * Rigorous Test :-)
-     */
+    Calculator calc = new Calculator();
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    void testAdd() {
+        assertEquals(5, calc.add(2, 3));
+    }
+    @Test
+    void testSubtract() {
+        assertEquals(1, calc.subtract(3, 2));
     }
 }
